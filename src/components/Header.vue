@@ -108,6 +108,34 @@
               shadow-xl
             "
           >
+
+          <a
+              @click="home"
+              class="
+                flex
+                px-4
+                py-2
+                rounded-md
+                text-sm text-gray-700
+                hover:bg-indigo-600 hover:text-white
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 mr-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                />
+              </svg>
+              Home</a
+            >
             <a
               @click="logout"
               class="
@@ -145,6 +173,7 @@
 
 <script setup lang="ts">
 import router from "@/router";
+import axios from "axios";
 import { ref } from "vue";
 import { computed } from "vue";
 
@@ -160,9 +189,15 @@ const { isOpen } = useSidebar();
 const notificationOpen = ref(false);
 
 const logout = () => {
-  userStore.setUser(null);
-  // TODO: logout route
-  // window.location.href = "http://mowafaqwali-001-site1.gtempurl.com/logout";
-  router.push("/");
+  // userStore.setUser(null);
+  console.log('am in the logout functionality');
+  window.location.href = "https://localhost:44383/api/access/logout";
+  localStorage.removeItem("user");
 }
+
+const home = () => {
+  console.log('am in the logout functionality');
+  window.location.href = "https://localhost:44383/";
+}
+
 </script>
