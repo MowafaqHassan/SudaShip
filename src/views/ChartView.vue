@@ -2,7 +2,7 @@
   
   <div>
     <!-- Breadcrumb -->
-    <Breadcrumb breadcrumb="charts" />
+    <Breadcrumb breadcrumb="charts"  onload="GetStatistic()" />
     
 
     <div class="mt-4">
@@ -47,7 +47,7 @@
                 </svg>
               </div>
   
-              <div class="mx-5" v-for="statisic in Statistics" :key="statisic">
+              <div @click="GetStatistic" class="mx-5" v-for="statisic in Statistics" :key="statisic">
                 <h4 class="text-2xl font-semibold text-gray-700">{{statisic.users}}</h4>
                 <div class="text-gray-500">New Users</div>
               </div>
@@ -168,6 +168,12 @@ data() {
           ]
       }
     },
+
+    method:{
+      GetStatistic(){
+      console.log("test statitstic");
+      }
+    }
              // Adding an input method from SweetAlert 2 automatically binds an input form.
        
 }

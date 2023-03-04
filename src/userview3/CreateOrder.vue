@@ -2,7 +2,7 @@
   <!-- Breadcrumb -->
   <Breadcrumb breadcrumb="Forms" />
   <h1
-    class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-white md:text-3xl lg:text-3xl"
+    class="mb-4 text-3xl font-extrabold text-gray-900 dark:text-dark md:text-3xl lg:text-3xl"
   >
     <span
       class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
@@ -15,7 +15,7 @@
   <form class="p-5" @submit.prevent="showAlert">
     <div class="p-5 border-solid border-2 border-emerald-200 bg-white">
       <h6
-        class="mb-4 text-1xl font-extrabold text-gray-900 dark:text-white md:text-1xl lg:text-1xl"
+        class="mb-4 text-1xl font-extrabold text-gray-900 dark:text-dark md:text-1xl lg:text-1xl"
       >
         <span
           class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
@@ -27,7 +27,7 @@
         <div>
           <label
             for="last_name"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
           >
             First Name</label
           >
@@ -36,7 +36,7 @@
             type="text"
             name="sfn"
             id="last_name"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Ahmed"
             required
           />
@@ -44,7 +44,7 @@
 
         <div>
           <label
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
             >Last Name</label
           >
           <input
@@ -52,7 +52,25 @@
             name="sln"
             type="text"
             placeholder="Daffalla"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            required
+          />
+        </div>
+
+        <div>
+          <label
+            for="UserName"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
+          >
+            User Name</label
+          >
+          <input
+            v-model="sender.userName"
+            type="text"
+            name="sfn"
+            id="last_name"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Ahmed"
             required
           />
         </div>
@@ -60,7 +78,7 @@
         <div>
           <label
             for="email"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
           >
             Email</label
           >
@@ -69,7 +87,7 @@
             name="se"
             type="text"
             id="email"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="khartoum "
             required
           />
@@ -77,7 +95,7 @@
         <div>
           <label
             for="phone"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
             >Phone number</label
           >
           <input
@@ -85,7 +103,7 @@
             name="sp"
             type="tel"
             id="phone"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="+249"
             required
           />
@@ -94,7 +112,7 @@
         <div>
           <label
             for="passport"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
             >Passport ID</label
           >
           <input
@@ -102,7 +120,7 @@
             name="spid"
             type="tel"
             id="passport"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="passport ID"
             required
           />
@@ -110,7 +128,7 @@
       </div>
 
       <h6
-        class="mb-4 text-1xl font-extrabold text-gray-900 dark:text-white md:text-1xl lg:text-1xl"
+        class="mb-4 text-1xl font-extrabold text-gray-900 dark:text-dark md:text-1xl lg:text-1xl"
       >
         <span
           class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
@@ -122,7 +140,7 @@
       <div class="grid gap-6 mb-6 md:grid-cols-2">
         <div>
           <label
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
           >
             First Name</label
           >
@@ -131,7 +149,7 @@
             name="rfn"
             type="text"
             id="last_name"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Ahmed"
             required
           />
@@ -139,7 +157,7 @@
 
         <div>
           <label
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
             >Last Name</label
           >
           <input
@@ -147,14 +165,32 @@
             name="rln"
             type="text"
             placeholder="Daffalla"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
             required
           />
         </div>
 
         <div>
           <label
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            for="userName"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
+          >
+            First Name</label
+          >
+          <input
+            v-model="receiver.userName"
+            type="text"
+            name="sfn"
+            id="last_name"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Ahmed"
+            required
+          />
+        </div>
+
+        <div>
+          <label
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
           >
             Email</label
           >
@@ -163,7 +199,7 @@
             name="re"
             type="text"
             id="email"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="khartoum "
             required
           />
@@ -171,7 +207,7 @@
         <div>
           <label
             for="phone"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
             >Phone number</label
           >
           <input
@@ -179,7 +215,7 @@
             name="rp"
             type="tel"
             id="phone"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="+249"
             required
           />
@@ -187,7 +223,7 @@
         </div>
         <div>
           <label
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
             >Passport ID</label
           >
           <input
@@ -195,7 +231,7 @@
             name="rpid"
             type="tel"
             id="passport"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="passport ID"
             required
           />
@@ -214,7 +250,7 @@
         class="p-5 bg-white"
       >
         <h6
-          class="mb-4 text-1xl font-extrabold text-gray-900 dark:text-white md:text-1xl lg:text-1xl"
+          class="mb-4 text-1xl font-extrabold text-gray-900 dark:text-dark md:text-1xl lg:text-1xl"
         >
           <span
             class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
@@ -227,7 +263,7 @@
           <div>
             <label
               for="last_name"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
               >What Is The Item</label
             >
             <input
@@ -244,7 +280,7 @@
           <div>
             <label
               for="last_name"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
               >Brand Or Manufacturer</label
             >
             <input
@@ -261,7 +297,7 @@
           <div>
             <label
               for="last_name"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
               >Which Model Is It</label
             >
             <input
@@ -269,7 +305,7 @@
               :name="'o-' + index + '-modl'"
               type="text"
               id="last_name"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Model"
               required
             />
@@ -278,7 +314,7 @@
           <div>
             <label
               for="last_name"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
               >Shipment description</label
             >
             <input
@@ -286,7 +322,7 @@
               :name="'o-' + index + '-d'"
               type="text"
               id="last_name"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="description"
               required
             />
@@ -295,7 +331,7 @@
           <div>
             <label
               for="last_name"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
               >Which Is It Made Of</label
             >
             <input
@@ -303,7 +339,7 @@
               :name="'o-' + index + '-mad'"
               v-model="order.Made"
               id="last_name"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Made"
               required
             />
@@ -311,14 +347,14 @@
           <div>
             <label
               for="visitors"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
               >Weight (kg)</label
             >
             <input
               v-model="order.weight"
               :name="'o-' + index + '-w'"
               id="visitors"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder=""
               required
             />
@@ -327,7 +363,7 @@
         <div>
           <label
             for="visitors"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
             >Quantity</label
           >
 
@@ -337,20 +373,20 @@
             min="1"
             :name="'o-' + index + '-sfn'"
             id="last_name"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Ahmed"
             required
           />
         </div>
 
-        <!-- <label class="mb-4 text-gray-900 dark:text-white"
+        <!-- <label class="mb-4 text-gray-900 dark:text-dark"
         >Characteristics Of Order:</label
       >
       <br />
       <br />
 
       <ul
-        class="items-center w-full text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+        class="items-center w-full text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 sm:flex dark:bg-gray-700 dark:border-gray-600 dark:text-dark"
       >
         <li
           class="w-full border-b border-gray-200 sm:border-b-0 sm:border-r dark:border-gray-600"
@@ -438,7 +474,7 @@
 
       <div class="p-5 bg-white">
         <h6
-          class="mb-4 text-1xl font-extrabold text-gray-900 dark:text-white md:text-1xl lg:text-1xl"
+          class="mb-4 text-1xl font-extrabold text-gray-900 dark:text-dark md:text-1xl lg:text-1xl"
         >
           <span
             class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
@@ -449,7 +485,7 @@
         <div class="grid gap-6 mb-6 md:grid-cols-2">
           <div>
             <label
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
               >Country</label
             >
             <input
@@ -457,21 +493,21 @@
               name="slc"
               type="text"
               placeholder="Sudan"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
               required
             />
           </div>
 
           <div>
             <label
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
               >State</label
             >
             <input
               v-model="sourceLocation.state"
               name="sc"
               type="text"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Khartoum"
               required
             />
@@ -479,7 +515,7 @@
           </div>
           <div>
             <label
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
             >
               City</label
             >
@@ -488,7 +524,7 @@
               name="slcc"
               type="text"
               id="email"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="City"
               required
             />
@@ -496,14 +532,14 @@
           <div>
             <label
               for="passport"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
               >Street</label
             >
             <input
               v-model="sourceLocation.street"
               name="sstreet"
               type="tel"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Street"
               required
             />
@@ -523,7 +559,7 @@
         </map-location-selector>
 
         <h6
-          class="my-4 text-1xl font-extrabold text-gray-900 dark:text-white md:text-1xl lg:text-1xl"
+          class="my-4 text-1xl font-extrabold text-gray-900 dark:text-dark md:text-1xl lg:text-1xl"
         >
           <span
             class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400"
@@ -534,7 +570,7 @@
         <div class="grid gap-6 mb-6 md:grid-cols-2">
           <div>
             <label
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
               >Country</label
             >
             <input
@@ -542,21 +578,21 @@
               name="slc"
               type="text"
               placeholder="Sudan"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
               required
             />
           </div>
 
           <div>
             <label
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
               >State</label
             >
             <input
               v-model="destinationLocation.state"
               name="sc"
               type="text"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Khartoum"
               required
             />
@@ -564,7 +600,7 @@
           </div>
           <div>
             <label
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
             >
               City</label
             >
@@ -573,7 +609,7 @@
               name="slcc"
               type="text"
               id="email"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="City"
               required
             />
@@ -581,14 +617,14 @@
           <div>
             <label
               for="passport"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
               >Street</label
             >
             <input
               v-model="destinationLocation.street"
               name="sstreet"
               type="tel"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Street"
               required
             />
@@ -608,14 +644,14 @@
         </map-location-selector>
         <div>
           <label
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
             >Notes</label
           >
           <textarea
-            v-model="notes"
+            v-model="note"
             name="sln"
             placeholder="Notes..."
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
             required
           ></textarea>
         </div>
@@ -623,7 +659,7 @@
         <div class="mt-2">
           <label
             for="visitors"
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
             >Volume (cbm) and/or dims (cm)</label
           >
           <input
@@ -631,7 +667,7 @@
             v-model="text"
             placeholder="The number of cubic meters reserved by the order"
             id="visitors"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
             required
           />
         </div>
@@ -641,12 +677,12 @@
           <br />
           <input
             v-model="deliveryDate"
-            class="rounded-none rounded-r-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="rounded-none rounded-r-lg bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 w-full text-sm border-gray-300 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark dark:focus:ring-blue-500 dark:focus:border-blue-500"
             type="date"
             placeholder="PO Delivery Date"
           /><br />
           <pre
-            class="mb-4 text-1xl font-extrabold text-gray-900 dark:text-white md:text-1xl lg:text-1xl"
+            class="mb-4 text-1xl font-extrabold text-gray-900 dark:text-dark md:text-1xl lg:text-1xl"
           ><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Delivery Date:<br>  {{ addDays(deliveryDate, 31) }}</span></pre>
         </div>
 
@@ -654,7 +690,7 @@
 
         <label
           for="website-admin"
-          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-dark"
           >Price
         </label>
 
@@ -662,7 +698,7 @@
           <br />
           <div>
             <pre
-              class="mb-4 text-1xl font-extrabold text-gray-900 dark:text-white md:text-1xl lg:text-1xl"
+              class="mb-4 text-1xl font-extrabold text-gray-900 dark:text-dark md:text-1xl lg:text-1xl"
             ><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Total-Price Is: {{ count }} $</span></pre>
           </div>
         </div>
@@ -690,6 +726,7 @@ export default {
       sender: {
         firstName: "",
         lastName: "",
+        userName:"",
         phone: "",
         email: "",
         passportId: "",
@@ -697,6 +734,7 @@ export default {
       receiver: {
         firstName: "",
         lastName: "",
+        userName:"",
         phone: "",
         email: "",
         passportId: "",
@@ -780,38 +818,13 @@ export default {
       }/${result.getDate()}/${result.getFullYear()}`;
     },
     showAlert() {
-      // Use sweetalert2
-      // const keysNotEmpty = (obj, keys) => {
-      //   for (let i = 0; i < keys.length; i++) {
-      //     if (!obj[keys[i]] || obj[keys[i]].length == 0) {
-      //       return false;
-      //     }
-      //   }
-      //   return true;
-      // }
-      // const validateInfo = (obj) => {
-      //   return keysNotEmpty(obj, [
-      //     "firstName",
-      //     "lastName",
-      //     "phone",
-      //     "email",
-      //     "passportId",
-      //   ]);
-      // }
-      // if (
-      //   !validateInfo(this.sender)  || !validateInfo(this.receiver)
-      // ) {
-      //   this.$swal("All Filds Are mandatory");
-      // } else {
-      // }
-      // this.$router.push("/cargoDetils");
       const payload = {
         sender: this.sender,
         reciever: this.receiver,
         sourceLocation: this.sourceLocation,
         destinationLocation: this.destinationLocation,
         customerShippingDate: this.deliveryDate,
-        notes: this.notes,
+        note: this.note,
         items: this.orders.map((o) => ({
           name: o.item,
           description: o.description,
@@ -827,9 +840,10 @@ export default {
     },
 
     createOrder(payload) {
-      this.axios
-        .post(
-          "http://mowafaqwali-001-site1.gtempurl.com/api/Orders/createOrder",
+      console.log("You Are in create order");
+      console.log(payload);
+
+      this.axios.post("https://localhost:44388/api/Orders/createOrder",
           payload
         )
         .then(() => {

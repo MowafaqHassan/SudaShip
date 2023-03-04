@@ -19,20 +19,20 @@ export async function authGuard(to: any, from: any, next: any) {
 
       const userRole = computed(() => userStore.userRole);
       // TODO
-      // const token = computed(() => userStore.token);
-      // const refreshToken = computed(() => userStore.refreshToken);
-      // const refreshResponse = await getRefreshToken(
-      //   token.value,
-      //   refreshToken.value
-      // );
-      // if (refreshResponse) {
-      //   userStore.saveUser({
-      //     ...userStore.user,
-      //     ...refreshResponse,
-      //   });
-      // }
+      const token = computed(() => userStore.token);
+      const refreshToken = computed(() => userStore.refreshToken);
+      const refreshResponse = await getRefreshToken(
+        token.value,
+        refreshToken.value
+      );
+      if (refreshResponse) {
+        userStore.saveUser({
+          ...userStore.user,
+          ...refreshResponse,
+        });
+      }
 
-      console.log("from data are ", from);
+      // console.log("from data are ", from);
 
       next();
 

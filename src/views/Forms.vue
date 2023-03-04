@@ -14,6 +14,10 @@
     <input v-model="userInfo.lastName" type="text" id="text" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder=" " required>
   </div>
  
+  <div class="mb-6">
+    <label for="text" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Secand Name</label>
+    <input v-model="userInfo.userName" type="text" id="text" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder=" " required>
+  </div>
 
   <div class="mb-6">
     <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"> Email</label>
@@ -54,37 +58,36 @@ export default {
 name: "EmployeeAdding",
 data() {
       return {
-     
-        
-  userInfo: {
+    userInfo: {
     firstName: "",
     lastName: "",
+    userName:"",
     email: "",
     phoneNumber: "",
     roleName: "",
-    
   },
   departmentId: 2
 
-}},
+}
+},
     methods: {
       sendPost() {
-
-        axios
-        .post("http://mowafaqwali-001-site1.gtempurl.com/api/CreateEmployee" , {userInfo: this.userInfo}  )
+        axios.post("https://localhost:44388/api/admin/CreateEmployee" ,{userInfo: this.userInfo , departmentId:2} )
         .then(res => {
-          console.log(res);
+          if (res != null) {
+            console.log(res);
+            console.log("The Response is null ");
+          }else{
+            this.$swal.fire({
+              position: 'top-end',
+              icon: 'success',
+              title: 'Order Have Been Submited',
+              showConfirmButton: false,
+              timer: 15500
+            });
+          }
+          this.$router.push("/Employee");
         })},
-        AddedEmployee() {
-      this.$swal.fire({
-position: 'top-end',
-icon: 'success',
-title: 'Order Have Been Submited',
-showConfirmButton: false,
-timer: 15500
-})}, 
-    
-    
     } }    // Adding an input method from SweetAlert 2 automatically binds an input form.
   
 </script>
